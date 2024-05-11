@@ -3,4 +3,4 @@
 + UserForm2.frx Information for this VBA Macro
 
 
-+Thanks for using this Macro and have fun <3
+* Thanks for using this Macro and have fun <3
