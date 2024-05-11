@@ -18,10 +18,10 @@
   How To Use:
   
   You can choice your First Steps
-    + First Step click on Get Processes or click on Bekomme Prozesse 
-    + First Step click to active the loop in the Option Button : Caption : Loop. If you don´t use that click on the Option Button: Caption : No Loop 
-    + You can Open a Process with the Textbox in the App Header to start this click on Open Task or Click on Starte Task (Optional)
-    + You can kill the process with the selected Item in the Listbox then click on Kill selected Task (Optional) 
-    + You Can clear the List Box, click on Clear Processlist
+  + First Step click on Get Processes or click on Bekomme Prozesse 
+  + First Step click to active the loop in the Option Button : Caption : Loop. If you don´t use that click on the Option Button: Caption : No Loop 
+  + You can Open a Process with the Textbox in the App Header to start this click on Open Task or Click on Starte Task (Optional)
+  + You can kill the process with the selected Item in the Listbox then click on Kill selected Task (Optional) 
+  + You Can clear the List Box, click on Clear Processlist
 
 ________________________________________________________________________________________________________________________________________________________________
