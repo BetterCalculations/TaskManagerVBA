@@ -5,6 +5,7 @@
 2.0 is Released
 
   News:
+  
     + Added App Loop for every 5 Minutes
 
 * Thanks for using this Macro and have fun <3
