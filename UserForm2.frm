@@ -20,46 +20,15 @@ Dim BackupString4 As String
 Dim BackupString5 As String
 
 Private Sub CommandButton1_Click()
-    Dim Process As Object
+    Modul4.getProcess
  
     
-For Each Process In GetObject("winmgmts:").ExecQuery("Select * from Win32_Process")
     
-    
-            
-    If Process.caption = "System" Then
-        e = 1
-    ElseIf Process.caption = "System Idle Process" Then
-        e = 2
-   
-    Else
-        ListBox1.AddItem (Process.caption)
-    End If
-  
-    
-Next
-CommandButton2.Enabled = True
 End Sub
 
 Private Sub CommandButton2_Click()
-    Dim LBItem As Long
-    For LBItem = 0 To ListBox1.ListCount - 1
-        If ListBox1.Selected(LBItem) = True Then
-            TaskKill = CreateObject("WScript.Shell").Run("taskkill /f /im " & ListBox1.List(LBItem), 0, True)
-            temp = ListBox1.List(LBItem)
-            ListBox1.RemoveItem (LBItem)
-            If (OptionButton4.Value = True) Then
-                 MsgBox (temp + " wurde beendet")
-            ElseIf OptionButton4.Value = False And OptionButton3.Value = True Then
-                
-                  MsgBox (temp + " was killed")
-            Else
-                   MsgBox (temp + " was killed")
-                End If
-                        
-                         
-                     End If
-    Next
+    Modul4.killProcess
+    
 End Sub
 
 Private Sub CommandButton5_Click()
@@ -116,6 +85,8 @@ Private Sub UserForm_Initialize()
     Frame1.ForeColor = RGB(255, 255, 255)
     Frame2.BackColor = RGB(0, 0, 0)
     Frame2.ForeColor = RGB(255, 255, 255)
+    Frame3.BackColor = RGB(0, 0, 0)
+    Frame3.ForeColor = RGB(255, 255, 255)
     ListBox1.BackColor = RGB(0, 0, 0)
     ListBox1.ForeColor = RGB(0, 150, 0)
     CommandButton2.Enabled = False
@@ -125,6 +96,10 @@ Private Sub UserForm_Initialize()
     BackupString3 = CommandButton3.caption
     BackupString4 = CommandButton4.caption
     BackupString5 = CommandButton5.caption
+    OptionButton5.Value = False
+    Modul4.App_loop
+    
+    
 End Sub
 
 Private Sub CommandButton3_Click()
@@ -159,3 +134,4 @@ End Sub
 Private Sub UserForm_Click()
 
 End Sub
+
