@@ -1,4 +1,4 @@
-~Taskmanager V 2.0~
+*Taskmanager V 2.0*
 
 
 + Taskmanager.xlsm : Is for Lazy people their don´t paste the code <3
