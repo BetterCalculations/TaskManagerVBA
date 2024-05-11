@@ -3,6 +3,7 @@
 + UserForm2.frx Information for this VBA Macro 
 
 2.0 is Released
+
   News:
     + Added App Loop for every 5 Minutes
 
